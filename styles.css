@@ -39,3 +39,74 @@ h1 {
   width: 200px;
   margin: 0 auto;
 }
+/* Basic Styling for the container */
+.character-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.character {
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.5s ease;
+}
+
+.tahani {
+  left: 20%;
+}
+
+.yasir {
+  left: 50%;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Hug animation */
+@keyframes hug {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0); }
+}
+
+.hugging { animation: hug 1s ease-in-out; }
+
+/* Pat animation */
+@keyframes pat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.patting { animation: pat 0.5s ease-in-out; }
+
+/* Kiss animation */
+@keyframes kiss {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.kissing { animation: kiss 0.7s ease-in-out; }
+
+/* Peck animation */
+@keyframes peck {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.pecking { animation: peck 0.3s ease-in-out; }
+
+/* Sway animation */
+@keyframes sway {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.swaying { animation: sway 1s ease-in-out; }
